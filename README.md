@@ -5,3 +5,5 @@ So here we are expecting to get min wt node, this can be done by Priority Queue.
 Worst Case- we will have to add all the edges, so O(ElogE)
 Dry run the code for clear understanding. 
 We didn't do any relaxation here, we just used the property of PQ and visited array and got min distance, all nodes being connected. Seems like an alternative to dijkstra algorithm. 
+Main difference between Dijkstra algorithm and this prim's is, Dijkstra gives minimum distance from starting node to each other node. whereas prim's gives minimum distance of the total edge weight of the tree that connects all nodes. PQ can only give the min from nrighbours, but it cannot give other routes distances, for this we use relaxation. Using relaxation is important
+The core difference is path vs tree. MST gives you a tree, it covers all the nodes with minimum total edge weight, but it does not gaurantee the Shortest path from the source to all other Nodes. 
